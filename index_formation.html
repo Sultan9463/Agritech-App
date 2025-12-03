@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agritech App</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="Dossier_Css/style_home.css"> -->
+<!-- <link rel="stylesheet" href="Dossier_Css/style_formation.css"> -->
+ <link rel="stylesheet" href="Dossier_Css/style.css">
+</head>
+<body>
+    <!--entete--------->
+    <section class="header d-flex justify-content-between align-items-center bg-warning-subtle p-2 px-4">
+
+        <div class="header-left d-flex align-items-center gap-3">
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-envelope fs-1"></i>
+                <small class="m-0">support@agritech.com</small>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-telephone fs-1"></i>
+                <small class="m-0">(00227) 99 98 97 96</small>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-2">
+            <img class="niger" src="images/logo.png" alt="Logo">
+            <h1 class="m-0">Agritech App</h1>
+        </div>
+
+        <div class="d-flex align-items-center gap-3">
+            <img class="niger" src="images/Flag_of_Niger_(3-2).svg" alt="">
+            <h1 class="fs-4 ">NE</h1>
+            <i class="bi bi-twitter-x fs-4"></i>
+            <i class="bi bi-facebook fs-4"></i>
+            <i class="bi bi-linkedin fs-4"></i>
+            <i class="bi bi-instagram fs-4"></i>
+            <i class="bi bi-tiktok fs-4"></i>
+        </div>
+    </section>
+    <!-- Toggle Checkbox (caché) -->
+    <input type="checkbox" id="sidebarToggle" hidden>
+    <nav class="navbar bg-light justify-content-between px-3">
+        <nav class="boutton navbar w-25 bg-body-tertiary">
+            <form class="container-fluid">
+                <div class="input-group">
+                    <span class="input-group-text px-4" id="basic-addon1"><i class="bi bi-search"></i></span>
+                    <input type="text" class="form-control py-3" placeholder="Search anything..." aria-label="Username"
+                        aria-describedby="basic-addon1" />
+                </div>
+            </form>
+        </nav>
+        <div class="logo-head d-none align-items-center justify-content-center gap-2 ps-5">
+            <img class="niger" src="images/logo.png" alt="">
+            <span class="navbar-brand mb-0 h1">Agritech App</span>
+        </div>
+        <div class="barre nav-item d-flex align-items-center justify-content-center navbar-brand gap-3">
+            <div class="d-flex align-items-center gap-2"><a class="nav-link active" aria-current="page" href="index_acceuil.html">Home <i
+                        class="bi bi-arrow-up-right"></i></a> </div>
+            <div class="d-flex align-items-center gap-2"> <a class="nav-link" href="index_formation.html">Formation <i
+                        class="bi bi-arrow-up-right"></i></a></div>
+            <div class="d-flex align-items-center gap-2"><a class="nav-link" href="index_meteo.html">Metier<i
+                        class="bi bi-arrow-up-right"></i></a> </div>
+            <div class="d-flex align-items-center gap-2"> <a class="nav-link" href="index_indicateur.html">Indicateurs<i
+                        class="bi bi-arrow-up-right"></i></a></div>
+        </div>
+        <a href="index.html" class="text-light"><button type="button" class="bton-conect btn px-5 bg-secondary btn-lg d-flex gap-2">Connect <i class="bi bi-box-arrow-in-left"></i></a>
+        </button>
+        <label for="sidebarToggle" class="btn-menu text-white m-0 p-0">
+            <i class="bi bi-list fs-1"></i>
+        </label>
+    </nav>
+
+    <div class="sidebar">
+        <div class="d-flex align-items-center justify-content-between">
+            
+            <div class="logo-head d-flex align-items-center justify-content-center gap-2 ps-3">
+            <img class="niger" src="images/logo.png" alt="">
+            <span class="navbar-brand mb-0 h1"> <h4>Agritech Menu</h4></span>
+            </div>
+            <label for="sidebarToggle" class="close-btn">
+                <i class="bi bi-x-lg"></i>
+            </label>
+        </div>
+        <div class="p-3">
+           <a href="index.html"> <button class="bton btn btn-light w-75 ms-5 py-3 fs-4 rounded-5 mb-2 text-light"> 
+                Se connecter <i class="bi bi-box-arrow-in-left"></i> </button> </a>
+        </div>
+        <hr>
+        <ul class="sidebar-menu list-unstyled">
+            <li><a class="nav-link active" aria-current="page" href="index_acceuil.html">Home <i
+                        class="bi bi-arrow-up-right"></i></a></li>
+            <li><a class="nav-link" href="index_formation.html">Formation <i
+                        class="bi bi-arrow-up-right"></i></a></li>
+            <li><a class="nav-link" href="index_meteo.html">Metier<i
+                        class="bi bi-arrow-up-right"></i></a></li>
+            <li><a class="nav-link" href="index_indicateur.html">Indicateurs<i
+                        class="bi bi-arrow-up-right"></i></a></li>
+        </ul>
+        <hr>
+
+        <div class="d-flex flex-column align-items-center justify-content-center w-100">
+            <h3>Socials Links:</h3>
+            <div class="d-flex align-items-center gap-3">
+            <img class="niger" src="images/Flag_of_Niger_(3-2).svg" alt="">
+            <h1 class="fs-4 border-end border-3 pe-2 " >NE</h1>
+            <i class="bi bi-twitter-x fs-4"></i>
+            <i class="bi bi-facebook fs-4"></i>
+            <i class="bi bi-linkedin fs-4"></i>
+            <i class="bi bi-instagram fs-4"></i>
+            <i class="bi bi-tiktok fs-4"></i>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-envelope fs-1"></i>
+                <h6 class="m-0">support@agritech.com</h6>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-telephone fs-1"></i>
+                <h6 class="m-0">(00227) 99 98 97 96</h6>
+            </div>
+        </div>
+
+        </div>
+       
+
+        
+    </div>
+
+    <section class=" w-mardi container-fluid rounded-4 py-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="p-5">Nos formations</h2>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid">
+        <div class="col-12 text-start">
+                <h2 class="p-5"> Toutes Nos Formations</h2>
+        </div>
+    </section>
+
+     <section class="container py-4">
+        <div class="row g-4 overflow-hidden">
+            <div class="col-md-4 m-0 gap-2">
+               <div class="position-relative">
+                    <!-- Image -->
+                    <img class="imagr img-fluid rounded-4 img-zoom w-100" src="images/Blog-img-1.jpg" alt="">
+
+                    <!-- Badge Date SUR l’image -->
+                    <div class="badge-date position-absolute d-flex flex-column 
+                                justify-content-center align-items-center">
+                        <span class="day">10</span>
+                        <span class="month">08/2020</span>
+                    </div>
+                </div>
+                    <div class="text-center">
+                        <p class="text-center text-success pt-3">Jardinnage</p>
+                        <h3>Lorem dolor</h3>
+                         <p>Malika Malikatou</p>
+                        <p class="fs-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Vitae unde natus, culpa eius aliquam adipi...
+                        </p>
+                        <p class="d-flex align-items-center justify-content-center gap-2"><i class="bi bi-chat-left-dots fs-4"></i> 7 comments</p>
+                      <a href="inde_detail.html"> <button type="button" class="bton btn py-3 px-5 rounded-5 btn-primary btn-lg">Voir plus <i class="bi bi-box-arrow-in-up-right"></i></button></a> 
+                    </div>
+            </div>
+            <div class="col-md-4 m-0">
+                <div class="position-relative">
+                    <!-- Image -->
+                    <img class="imagr img-fluid rounded-4 img-zoom w-100" src="images/Blog-img-9.jpg" alt="">
+
+                    <!-- Badge Date SUR l’image -->
+                    <div class="badge-date position-absolute d-flex flex-column 
+                                justify-content-center align-items-center">
+                        <span class="day">29</span>
+                        <span class="month">09/2019</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                        <p class="text-center text-success pt-3">Contre-Saison</p>
+                        <h3>Cras dapibus</h3>
+                         <p>Amir Amirou</p>
+                        <p class="fs-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Vitae unde natus, culpa eius aliquam adipi...
+                        </p>
+                        <p class="d-flex align-items-center justify-content-center gap-2"><i class="bi bi-chat-left-dots fs-4"></i> 4 comments</p>
+                        <a href="inde_detail.html"> <button type="button" class="bton btn py-3 px-5 rounded-5 btn-primary btn-lg">Voir plus <i class="bi bi-box-arrow-in-up-right"></i></button></a> 
+                    </div>
+            </div>
+            <div class="col-md-4 m-0">
+               <div class="position-relative">
+                    <!-- Image -->
+                    <img class="imagr img-fluid rounded-4 img-zoom w-100" src="images/Blog-img-4.jpg" alt="">
+
+                    <!-- Badge Date SUR l’image -->
+                    <div class="badge-date position-absolute d-flex flex-column 
+                                justify-content-center align-items-center">
+                        <span class="day">26</span>
+                        <span class="month">07/2019</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                        <p class="text-center text-success pt-3">Jardinnage</p>
+                        <h3>Lorem ipsum</h3>
+                        <p>Abdou Abdourahmane</p>
+                        <p class="fs-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Vitae unde natus, culpa eius aliquam adipi...
+                        </p>
+                        <p class="d-flex align-items-center justify-content-center gap-2"><i class="bi bi-chat-left-dots fs-4"></i> 3 comments</p>
+                        <a href="inde_detail.html"> <button type="button" class="bton btn py-3 px-5 rounded-5 btn-primary btn-lg">Voir plus <i class="bi bi-box-arrow-in-up-right"></i></button></a> 
+                    </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="container py-4">
+        <div class="row g-4 overflow-hidden">
+            <div class="col-md-4 m-0 gap-2">
+                <div class="position-relative">
+                    <img class="imagr img-fluid rounded-4 img-zoom w-100" src="images/Blog-img-10.jpg" alt="">
+                    <div class="badge-date position-absolute d-flex flex-column 
+                                justify-content-center align-items-center">
+                        <span class="day">29</span>
+                        <span class="month">08/2015</span>
+                    </div>
+                </div>
+                    <div class="text-center">
+                        <p class="text-center text-success pt-3">Désertification</p>
+                        <h3>Ultricies nec</h3>
+                          <p>laila leilatou</p>
+                        <p class="fs-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Vitae unde natus, culpa eius aliquam adipi...
+                        </p>
+                        <p class="d-flex align-items-center justify-content-center gap-2"><i class="bi bi-chat-left-dots fs-4"></i> 5 comments</p>
+                        <a href="inde_detail.html"> <button type="button" class="bton btn py-3 px-5 rounded-5 btn-primary btn-lg">Voir plus <i class="bi bi-box-arrow-in-up-right"></i></button></a> 
+                    </div>
+            </div>
+            <div class="col-md-4 m-0">
+               <div class="position-relative">
+                    <img class="imagr img-fluid rounded-4 img-zoom w-100" src="images/Blog-img-2.jpg" alt="">
+                    <div class="badge-date position-absolute d-flex flex-column 
+                                justify-content-center align-items-center">
+                        <span class="day">2</span>
+                        <span class="month">07/2015</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                        <p class="text-center text-success pt-3">Désertification</p>
+                        <h3>Cras dapibus</h3>
+                         <p>laila leilatou</p>
+                        <p class="fs-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Vitae unde natus, culpa eius aliquam adipi...
+                        </p>
+                        <p class="d-flex align-items-center justify-content-center gap-2"><i class="bi bi-chat-left-dots fs-4"></i> 2 comments</p>
+                         <a href="inde_detail.html"> <button type="button" class="bton btn py-3 px-5 rounded-5 btn-primary btn-lg">Voir plus <i class="bi bi-box-arrow-in-up-right"></i></button></a> 
+                    </div>
+            </div>
+            <div class="col-md-4 m-0">
+               <div class="position-relative">
+                    <img class="imagr img-fluid rounded-4 img-zoom w-100" src="images/Blog-img-3.jpg" alt="">
+                    <div class="badge-date position-absolute d-flex flex-column 
+                                justify-content-center align-items-center">
+                        <span class="day">19</span>
+                        <span class="month">02/2015</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                        <p class="text-center text-success pt-3">Pépinières</p>
+                        <h3>Lorem dolor</h3>
+                        <p>Abdou Abdourahmane</p>
+                        <p class="fs-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Vitae unde natus, culpa eius aliquam adipi...
+                        </p>
+                        <p class="d-flex align-items-center justify-content-center gap-2"><i class="bi bi-chat-left-dots fs-4"></i> 4 comments</p>
+                        <a href="inde_detail.html"> <button type="button" class="bton btn py-3 px-5 rounded-5 btn-primary btn-lg">Voir plus <i class="bi bi-box-arrow-in-up-right"></i></button></a> 
+                    </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="container py-4">
+        <div class="row g-4 overflow-hidden">
+            <div class="col-md-4 m-0 gap-2">
+               <div class="position-relative">
+                    <img class="imagr img-fluid rounded-4 img-zoom w-100" src="images/Blog-img-7.jpg" alt="">
+                    <div class="badge-date position-absolute d-flex flex-column 
+                                justify-content-center align-items-center">
+                        <span class="day">16</span>
+                        <span class="month">09/2014</span>
+                    </div>
+                </div>
+                    <div class="text-center">
+                        <p class="text-center text-success pt-3">Jardinnage</p>
+                        <h3>Donec sodales</h3>
+                         <p>Amir Amirou</p>
+                        <p class="fs-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Vitae unde natus, culpa eius aliquam adipi...
+                        </p>
+                        <p class="d-flex align-items-center justify-content-center gap-2"><i class="bi bi-chat-left-dots fs-4"></i> 3 comments</p>
+                        <a href="inde_detail.html"> <button type="button" class="bton btn py-3 px-5 rounded-5 btn-primary btn-lg">Voir plus <i class="bi bi-box-arrow-in-up-right"></i></button></a> 
+                    </div>
+            </div>
+            <div class="col-md-4 m-0">
+                <div class="position-relative">
+                    <img class="imagr img-fluid rounded-4 img-zoom w-100" src="images/Blog-img-8.jpg" alt="">
+                    <div class="badge-date position-absolute d-flex flex-column 
+                                justify-content-center align-items-center">
+                        <span class="day">21</span>
+                        <span class="month">01/2014</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                        <p class="text-center text-success pt-3">Pépinières</p>
+                        <h3>Cras dapibus</h3>
+                         <p>Malika Malikatou</p>
+                        <p class="fs-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Vitae unde natus, culpa eius aliquam adipi...
+                        </p>
+                        <p class="d-flex align-items-center justify-content-center gap-2"><i class="bi bi-chat-left-dots fs-4"></i> 4 comments</p>
+                       <a href="inde_detail.html"> <button type="button" class="bton btn py-3 px-5 rounded-5 btn-primary btn-lg">Voir plus <i class="bi bi-box-arrow-in-up-right"></i></button></a> 
+                    </div>
+            </div>
+            
+            <div class="col-md-4 m-0 position-relative ">
+
+                <div class="position-relative">
+                    <img class="imagr img-fluid rounded-4 img-zoom w-100" src="images/Blog-img-6.jpg" alt="">
+                    <div class="badge-date position-absolute d-flex flex-column 
+                                justify-content-center align-items-center">
+                        <span class="day">16</span>
+                        <span class="month">09/2012</span>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                        <p class="text-center text-success pt-3">Désertification</p>
+                         <h3>Cras dapibus</h3>
+                        <p>Abdou Abdourahmane</p>
+                        <p class="fs-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Vitae unde natus, culpa eius aliquam adipi...
+                        </p>
+                        <p class="d-flex align-items-center justify-content-center gap-2"><i class="bi bi-chat-left-dots fs-4"></i> 3 comments</p>
+                        <a href="inde_detail.html"> <button type="button" class="bton btn py-3 px-5 rounded-5 btn-primary btn-lg">Voir plus <i class="bi bi-box-arrow-in-up-right"></i></button></a> 
+                    </div>
+            </div>
+        </div>
+    </section>
+    
+     <section class="container py-4">
+        <div class="row g-4 overflow-hidden">
+            <div class="col-md-4 m-0 gap-2">
+                <div class="position-relative">
+                    <img class="imagr img-fluid rounded-4 img-zoom w-100" src="images/Blog-img-5.jpg" alt="">
+                    <div class="badge-date position-absolute d-flex flex-column 
+                                justify-content-center align-items-center">
+                        <span class="day">25</span>
+                        <span class="month">03/2011</span>
+                    </div>
+                </div>
+                    <div class="text-center">
+                        <p class="text-center text-success pt-3">Désertification</p>
+                        <h3>Ultricies necr</h3>
+                         <p>Amir Amirou</p>
+                        <p class="fs-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Vitae unde natus, culpa eius aliquam adipi...
+                        </p>
+                        <p class="d-flex align-items-center justify-content-center gap-2"><i class="bi bi-chat-left-dots fs-4"></i> 7 comments</p>
+                        <a href="inde_detail.html"> <button type="button" class="bton btn py-3 px-5 rounded-5 btn-primary btn-lg">Voir plus <i class="bi bi-box-arrow-in-up-right"></i></button></a> 
+                    </div>
+            </div>
+    </section>
+
+    <!-- footer----------------->
+    <footer class="pt-5">
+        <div class="input-group w-100 d-flex gap-3 align-items-center justify-content-end">
+            <h3>Join Our Newsletter</h3>
+            <div class="position-relative w-25"> 
+                <input type="text" class=" abonner form-control border-1 overflow-hidden py-3 px-5" placeholder="Username"> 
+                <button class="bton btn btn-success position-absolute p-3 rounded-4 top-50 end-0 translate-middle-y me-2"> S'abonner </button>
+            </div>
+        </div>
+        <section class="container-fluid py-5">
+            <div class="row g-4">
+                <!-- Bloc 1 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="d-flex flex-column align-items-start p-4 h-100">
+                        <div class="d-flex py-3 align-items-center gap-2">
+                            <img class="niger" src="images/logo.png" alt="Logo">
+                            <h2 class="m-0">Agritech App</h2>
+                        </div>
+                        <p class="start">
+                            Organic farming avoids toxins. Farmers care for soil
+                            and grow crops that are safe, natural. Farmers care for soil.
+                        </p>
+
+                        <h3>Suivez nous sur.</h3>
+
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="bi bi-twitter-x fs-4"></i>
+                            <i class="bi bi-facebook fs-4"></i>
+                            <i class="bi bi-linkedin fs-4"></i>
+                            <i class="bi bi-instagram fs-4"></i>
+                            <i class="bi bi-tiktok fs-4"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bloc 2 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="d-flex flex-column align-items-start p-4 h-100">
+                        <h3>Suivez nous sur.</h3>
+                        <p>>> Home</p>
+                        <p>>> Formations</p>
+                        <p>>> Météo</p>
+                        <p>>> Indicateurs</p>
+                    </div>
+                </div>
+                <!-- Bloc 3 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="d-flex flex-column align-items-start p-4 h-100">
+                        <h3>Nos Services</h3>
+                        <p>>> Home</p>
+                        <p>>> Formations</p>
+                        <p>>> Météo</p>
+                        <p>>> Indicateurs</p>
+                    </div>
+                </div>
+                <!-- Bloc 4 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="d-flex flex-column align-items-start p-4 h-100">
+                        <h3>Contactez Nous</h3>
+
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="bi bi-telephone fs-1"></i>
+                            <small>Phone:<br>(00227) 99 98 97 96</small>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="bi bi-geo-alt-fill fs-1"></i>
+                            <small>Localisation<br>Niamey-Niger</small>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="bi bi-envelope fs-1"></i>
+                            <small>E-mail:<br>support@agritech.com</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <p class="bton container-fluid fs-3 text-light w-100 p-5"> copyright 2025 Codeloccol, All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
