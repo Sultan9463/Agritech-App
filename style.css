@@ -184,33 +184,56 @@ a{
 .bton:active{
     color: #fff !important;
 }
-.second-card-cachet{
-    display: none;
-    width: 230px !important;
-    height: 400px !important;
-    border-radius: 15px !important;
-}
- .second-card {
-        opacity: 0;
-        transition: opacity 0.2s ease;
-    }
-    /* Transition pour la première carte et l'image */
-    .first-card {
-        transition: opacity 0.2s ease;
-    }
 
-    .hover-img {
-        transition: transform 0.2s ease;
-    }
-    .col-md-4:hover .hover-img {
-        transform: rotate(2deg) !important; /* Rotation légère */
-    }
-    .col-md-4:hover .first-card {
-        opacity: 0; /* Faire disparaître la première carte */
-    }
-    .col-md-4:hover .second-card {
-        opacity: 1; /* Faire apparaître la deuxième carte */
-    }
+
+.bton-detail{
+    background-color: transparent !important;
+    color: black;
+    border: none;
+    transition: all 0.3s ease;
+    margin-bottom: 0 !important;
+}
+
+.bton-detail:hover{
+   background-color: #1D3D14 !important;
+}
+/* .bton-detail:active{
+    color: #fff !important;
+} */
+
+.col-md-4.position-relative {
+    overflow: hidden;
+}
+/* Animation image : rotate + zoom */
+.hover-img {
+    transition: transform 0.3s ease;
+}
+
+.hover-img:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+/* FIRST CARD → visible par défaut */
+.first-card {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+.second-card {
+    opacity: 0;
+    pointer-events: none; /* évite les clics quand cachée */
+    transition: opacity 0.3s ease;
+}
+.col-md-4.position-relative:hover .first-card {
+    opacity: 0;
+}
+
+.col-md-4.position-relative:hover .second-card {
+    opacity: 1;
+    pointer-events: auto;
+}
+.second-card-cachet {
+    display: none !important;
+}
 
 @media (max-width:1440px) {
 .Home{
@@ -270,7 +293,7 @@ a{
         display: flex !important;
     }
 }
-@media (max-width: 425px){
+@media (max-width: 430px){
 
     .second-card-cachet{
     display: none;
