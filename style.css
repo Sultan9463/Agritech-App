@@ -33,6 +33,50 @@
     height: 300px !important;
 }
 
+/* La card entière */
+.card-blog {
+    background: #F9F8F6;
+    border-radius: 7px !important;
+    overflow: hidden;
+    transition: transform .4s ease, box-shadow .4s ease;
+}
+
+/* Effet hover sur toute la card */
+.card-blog:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+/* Si tu veux aussi animer l’image */
+.card-blog:hover img {
+    transform: scale(1.05);
+}
+.card-blog img {
+    transition: transform .4s ease;
+}
+/* Badge date */
+.badge-date {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background: #EEDF66;
+    color: #000;
+    bottom: -30px;          
+    left: 30px; 
+}   
+
+.textra{
+    height: 200px !important;
+}
+.bodd{
+    background-color: #1D3D14 !important;
+    border-radius: 6px !important;
+}
+.login{
+    width: 140px !important;
+    height: 75px !important;
+    
+}
+
+/* 
 .img-zoom {
     transition: transform 0.2s ease;
 }
@@ -70,7 +114,10 @@
     color: #000;
     bottom: -30px;          
     left: 30px;          
-}
+} */
+
+
+
 img{
     height: 50px;
 }
@@ -130,7 +177,7 @@ a{
     margin-left: 5px;
 }
 .confi{
-    padding-top: 200px;
+    padding-top: 150px;
 }
 .pousse{
     width: 65px;
@@ -188,14 +235,14 @@ a{
 
 .bton-detail{
     background-color: transparent !important;
-    color: black;
+   color: #198755;
     border: none;
     transition: all 0.3s ease;
     margin-bottom: 0 !important;
 }
 
 .bton-detail:hover{
-   background-color: #1D3D14 !important;
+   background-color: #198755 !important;
 }
 /* .bton-detail:active{
     color: #fff !important;
@@ -204,6 +251,14 @@ a{
 .col-md-4.position-relative {
     overflow: hidden;
 }
+
+
+.col-md-4.position-relative {
+    overflow: hidden;
+}
+
+
+
 /* Animation image : rotate + zoom */
 .hover-img {
     transition: transform 0.3s ease;
@@ -218,22 +273,30 @@ a{
     opacity: 1;
     transition: opacity 0.3s ease;
 }
+
+/* SECOND CARD → invisible au début */
 .second-card {
     opacity: 0;
-    pointer-events: none; /* évite les clics quand cachée */
-    transition: opacity 0.3s ease;
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
+/* Quand on hover le parent, on inverse */
 .col-md-4.position-relative:hover .first-card {
     opacity: 0;
 }
 
 .col-md-4.position-relative:hover .second-card {
     opacity: 1;
-    pointer-events: auto;
 }
+
+/* Cache totalement la 3e card */
 .second-card-cachet {
     display: none !important;
 }
+
+
+
+
+
 
 @media (max-width:1440px) {
 .Home{
@@ -263,6 +326,15 @@ a{
     height: 220px !important;
     border-radius: 100% !important;
     }
+    .second-card {
+        font-size: 12px !important;
+        padding: 0 !important;
+        height: 280px !important;
+        width: 280px !important;
+    }
+    .second-card h2{
+        font-size: 18px !important;
+    }
 }
 
 @media (max-width:768px) {
@@ -283,11 +355,14 @@ a{
     .header-left, .boutton{
         display: none !important;
     }
-    .indict, .first-card{
+    .indict, .first-card, .second-card{
         display: none !important;
     }
     .second-card-cachet{
         display: flex !important;
+         height: 340px !important;
+        width: 230px !important;
+        padding: 0 !important;
     }
     .app{
         display: flex !important;
@@ -320,7 +395,7 @@ a{
         color: #0b1220 !important;
     }
     .confi{
-    padding-top: 1000px;
+    padding-top: 1100px;
     }
     .pousse i{
     font-size: 50px;
