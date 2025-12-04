@@ -43,6 +43,7 @@
 
 /* Effet hover sur toute la card */
 .card-blog:hover {
+    /* transform: translate(20px,10px) !important; */
     transform: translateY(-8px) scale(1.02);
 }
 /* Si tu veux aussi animer l’image */
@@ -244,9 +245,9 @@ a{
 .bton-detail:hover{
    background-color: #198755 !important;
 }
-/* .bton-detail:active{
+.bton-detail:active{
     color: #fff !important;
-} */
+}
 
 .col-md-4.position-relative {
     overflow: hidden;
@@ -259,39 +260,43 @@ a{
 
 
 
-/* Animation image : rotate + zoom */
-.hover-img {
-    transition: transform 0.3s ease;
+/* Animation image */
+.card-wrapper:hover .hover-img {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
 }
 
-.hover-img:hover {
-    transform: scale(1.1) rotate(3deg);
-}
-
-/* FIRST CARD → visible par défaut */
+/* FIRST CARD position + transition */
 .first-card {
-    opacity: 1;
-    transition: opacity 0.3s ease;
+    height: 100px;                 /* petite au début */
+    bottom: 60px !important;
+    background-color: #F9F8F6 !important;
+    overflow: hidden;
+    opacity: 0.9;
+    transform: translateY(40px);  /* légèrement enterrée */
+    transition: 
+        height 0.6s ease, 
+        transform 0.6s ease, 
+        opacity 0.5s ease;
 }
 
-/* SECOND CARD → invisible au début */
-.second-card {
+/* Texte caché */
+.first-card .details {
     opacity: 0;
-    transition: opacity 0.4s ease, transform 0.4s ease;
-}
-/* Quand on hover le parent, on inverse */
-.col-md-4.position-relative:hover .first-card {
-    opacity: 0;
+    transition: opacity 0.5s ease 0.2s;
 }
 
-.col-md-4.position-relative:hover .second-card {
+/* ➜ HOVER : extension + montée + détails visibles */
+.card-wrapper:hover .first-card {
+    height: 300px;                /* devient plus grande */
+    transform: translateY(0);     /* remonte */
     opacity: 1;
 }
 
-/* Cache totalement la 3e card */
-.second-card-cachet {
-    display: none !important;
+.card-wrapper:hover .first-card .details {
+    opacity: 1;                   /* détails apparaissent */
 }
+
 
 
 
